@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/simplelightbox.css" />
+    <title>Head Jack - Headphones of the present</title>
+  </head>
+  <body id="home">
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Head Jack</h1>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Head phone showcase-->
+    <section class="section-a">
+      <div class="container">
+        <div>
+          <h1>Experience the next level of silence</h1>
+          <p>
+            See what happens when it's just you and your music, with noise
+            cancelling that cuts more outside sound than ever before. And
+            experience how smart headphones can be with advanced noise
+            cancelling technology such as Adaptive Sound Control, and the
+            convenience of smart features including Quick Attention, Voice
+            Assistant compatibility and touch control.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+        <img src="./img/showcase.jpg" alt="" />
+      </div>
+    </section>
+
+    <!--overlay text-->
+    <section class="section-b">
+      <div class="overlay">
+        <div class="section-b-inner">
+          <h3>Smart Listening</h3>
+          <h2>by SENSE ENGINE</h2>
+          <p class="intro-text"></p>
+            Automatically adjusts to your situation See how Adaptive Sound
+            Control automatically detects your activity such as travelling,
+            walking, and waiting, then adjusts ambient sound settings to you.
+            And with Quick Attention, you can communicate without removing your
+            headphones - simply place your hand over the housing to turn the
+            volume down for instant conversation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="section-c">
+      <div class="gallery">
+        <a href="./img/10-1.jpg" class="big">
+          <img src="./img/10-1.jpg" alt="" />
+        </a>
+        <a href="./img/11.jpg" class="big">
+          <img src="./img/11.jpg" alt="" />
+        </a>
+        <a href="./img/2.jpg" class="big">
+          <img src="./img/2.jpg" alt="" />
+        </a>
+        <a href="./img/lee-campbell-GI6L2pkiZgQ-unsplash.jpg" class="big">
+          <img src="./img/lee-campbell-GI6L2pkiZgQ-unsplash.jpg" alt="" />
+        </a>
+        <a href="./img/showcase.jpg" class="big">
+          <img src="./img/showcase.jpg" alt="" />
+        </a>
+        <a href="./img/9-1.jpg" class="big">
+          <img src="./img/9-1.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="section-footer">
+      <div class="container">
+        <div>
+          <h2>Head Jack</h2>
+          <a href="https://medium.com/@eyenike">
+            <i class="fab fa-medium fa-2x"></i>
+          </a>
+          <a href="https://github.com/terieyenike">
+          <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/terieyenike"><i class="fab fa-twitter fa-2x"></i> </a>
+        </div>
+        <div>
+          <h3>Find a store</h3>
+          <ul>
+            <li>
+              <a href="#">Online help</a>
+            </li>
+            <li>
+              <a href="#">Support community</a>
+            </li>
+            <li>
+              <a href="#">Service centers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Experience HeadJack</h3>
+          <ul>
+            <li><a href="#">Eco</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Subscribe</h3>
+          <p>Professional products & solutions</p>
+          <form name="email-form" method="POST" data.netlify="true">
+            <div class="email-form">
+              <span class="form-control-wrap">
+                <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
+              </span>
+              <button type="submit" class="form-control submit">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/65c2c254ab.js"></script>
+
+    <script src="./js/simple-lightbox.js"></script>
+    <script>
+      $(function() {
+        const $gallery = $('.gallery a').simpleLightbox();
+      });
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
