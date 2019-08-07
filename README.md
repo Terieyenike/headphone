@@ -36,3 +36,5 @@ Follow me on social
 [Twitter](https://twitter.com/terieyenike)
 
 [Github](https://github.com/terieyenike)
+
+Follow the link to view this project, [here](https://headjack.netlify.com/)
