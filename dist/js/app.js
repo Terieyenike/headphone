@@ -1,7 +1,7 @@
 function scrollAppear(){
   let introText = document.querySelector('.intro-text');
   let introPosition = introText.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.5;
+  let screenPosition = window.innerHeight / 1.2;
 
   if(introPosition < screenPosition){
     introText.classList.add('intro-appear')
