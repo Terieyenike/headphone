@@ -61,7 +61,7 @@ img {
   color: var(--text);
 }
 
-.nav-scrolled{
+.nav-scrolled {
   --text: #333;
   --text-inverse: #f4f4f4;
   --background: #f4f4f4;
@@ -218,7 +218,7 @@ img {
   color: #555;
 }
 
-.return{
+.return {
   position: absolute;
   bottom: 0;
   top: 50px;
@@ -226,6 +226,21 @@ img {
   display: flex;
 }
 
+.return a i {
+  transition: all 0.5s ease-in;
+  font-size: 2.5rem;
+  color: white;
+  animation: move 2s alternate infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
 
 /* Email form */
 .email-form {
