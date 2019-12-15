@@ -45,14 +45,27 @@ img {
 }
 
 .navbar {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
   font-size: 1.2rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 1
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+
+.nav-scrolled{
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .container {
@@ -178,6 +191,7 @@ img {
   background: var(--primary-color);
   color: #fff;
   padding: 4rem 0;
+  position: relative;
 }
 
 .section-footer .container {
@@ -203,6 +217,15 @@ img {
   margin-right: 0.5rem;
   color: #555;
 }
+
+.return{
+  position: absolute;
+  bottom: 0;
+  top: 50px;
+  right: 50px;
+  display: flex;
+}
+
 
 /* Email form */
 .email-form {
@@ -314,13 +337,13 @@ img {
     padding: 2rem 0;
   }
 
-  .section-footer .container{
+  .section-footer .container {
     grid-template-columns: 1fr;
-    text-align: center
+    text-align: center;
   }
 
   .section-footer div:nth-child(2),
   .section-footer div:nth-child(3) {
-    display: none
+    display: none;
   }
 }
